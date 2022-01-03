@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #nav {
+            width: 100%;
+            height: 50px;
+            border: 1px solid black;
+            background-color: black;
+            color: aqua;
+            gap: 20px;
+            align-items: center;
+            justify-content: right;
+            display: flex;
+            padding-right: 20px;
+            border-radius: 5px;
+        }
+        
+        #img {
+            padding: 30px;
+        }
+        
+        nav.img {
+            justify-content: center;
+        }
+        
+        #nav-list {
+            display: flex;
+            justify-content: right;
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <img id="img" src="https://www.themealdb.com/images/logo-small.png">
+
+        <ul id="nav-list">
+            <li><a href="signup.html">signup</a></li>
+            <li><a href="login.html">signup</a></li>
+            <li><a href="menu.html">MENU</a></li>
+        </ul>
+
+
+        <!-- <button id="menu" >Menu</button>
+        <button id="signup">SignUp</button>
+        <button id="login">LogIn</button> -->
+    </div>
+
+</body>
+
+</html>
+<script>
+    function goto() {
+        window.location.href = "menu.html"
+    }
+</script>
+
+<!-- //Create index.html. Add a simple navbar which shows login, signup and menu options. You are free to use a design of your choice. -->

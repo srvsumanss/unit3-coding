@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+</head>
+
+<body>
+    <div id="lunch_box"> </div>
+    <button id="checkout">Chechout</button>
+</body>
+
+</html>
+<script>
+    let lunch_box = document.getElementById("lunch_box")
+    let data = JSON.parse(localStorage.getItem("Mealcart"))
+
+    function appendCart(data) {
+        data.forEach(({
+            name,
+            dish,
+            image,
+            price
+        }) => {
+            let div = document.createElement("div")
+            let img = document.createElement("img")
+            img.src = image
+            let pri = document.createElement("p")
+            pri.textContent = price
+            mename.textContent = name
+            div.append(img, mename, pri)
+            lunch_box.append(div)
+        })
+    }
+
+    function goto() {
+        window.location.href = "checkout.html"
+    }
+</script>
+
+
+<!-- In menu.html, show the menu of available dishes, you can show random dishes. No need to add categories and all. Use this api to get dishes data https://www.themealdb.com/api.php?ref=apilist.fun -->
